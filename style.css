@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(236, 234, 234);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 400px auto auto auto ;
+    column-gap: 30px;
+    margin: 20px 200px;
+    align-items: flex-start;   
+}
+
+
+.logo {
+    grid-column: 1/ span 4;
+    grid-row: 1;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.menu {
+    grid-column:1/ span 4;
+    grid-row: 2;
+    border-radius: 2px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px lightgrey;    
+}
+
+.menu li {
+    list-style: none;
+    display: inline-block;
+    font-size: 2em;
+    padding: 35px;   
+}
+
+.login {
+    grid-column: 1/ span 1;
+    grid-row: 3;
+    margin-top:30px ;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px lightgrey;
+    padding: 40px;
+    width: auto ;
+    font-size: 1.5em;   
+}
+
+.help {
+    grid-column: 1/ span 1;
+    grid-row: 4;
+    margin-top:30px ;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px lightgrey;
+    width: auto ;
+    padding: 60px 60px 60px 30px;
+    font-size: 2em;
+    font-weight: bold;   
+}
+
+.content {
+    grid-column: 2/ span 3;
+    grid-row: 3/ span 3;
+    margin-top:30px ;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px lightgrey;
+    padding: 40px;
+    width: auto ;
+    height: 212px;
+    font-size: 1.5em;
+    
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;   
+}
+
+/* for mobile */
+
+
+@media (max-width: 600px) {
+    .container {
+        display: block;
+        margin: 20px;   
+    }
+}
+
+@media (max-width: 600px) {
+    .logo {
+        height: 100px;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu {
+        width: 100%;          
+}
+}
+
+@media (max-width: 600px) {
+    .menu li {
+        width: 90%;
+        list-style: none;
+        text-decoration: underline 2px;
+        color: rgb(69, 190, 209);
+        border-bottom: 2px solid lightgray;
+        padding: 15px;
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .help {
+      visibility: hidden;
+    }
+}   
